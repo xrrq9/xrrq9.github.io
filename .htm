@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Занимаем всю высоту экрана */
+            background-color: #f4f4f4;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Центрируем текст */
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Делаем аватар круглым */
+            object-fit: cover; /* Чтобы изображение заполняло круг */
+            margin-bottom: 20px;
+        }
+
+        .card h1 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+        }
+
+        .card .contact {
+            display: flex;
+            flex-direction: column; /* Располагаем элементы контактов друг под другом */
+            align-items: center;
+        }
+
+        .card .contact a {
+            text-decoration: none;
+            color: #333;
+            margin-bottom: 5px;
+            display: block; /* Занимаем всю ширину */
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="avatar.jpg" alt="Аватар">
+        <h1>Иван Иванов</h1>
+        <p>Web-разработчик</p>
+        <div class="contact">
+            <a href="mailto:ivan.ivanov@example.com">ivan.ivanov@example.com</a>
+            <a href="tel:+71234567890">+7 (123) 456-78-90</a>
+            <a href="https://example.com">example.com</a>
+            <a href="https://github.com/ivanov">github.com/ivanov</a>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
